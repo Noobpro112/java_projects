@@ -28,7 +28,7 @@ public class clienteDAO {
                 return id + "," + nome;  
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.out.println(e);
         }
         return "0";
     }
@@ -44,7 +44,7 @@ public class clienteDAO {
                 return ("Seu saldo é: " + String.valueOf(saldo));
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.out.println(e);
         }
         return "ERRO!";
     }
@@ -91,7 +91,7 @@ public class clienteDAO {
                 return "Saldo insuficiente para realizar a transferência.";
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.out.println(e);
             return "Erro ao realizar a transferência: " + e.getMessage();
         }
         return "Não foi possível realizar a transferência.";

@@ -45,7 +45,7 @@ public class App {
             Transport.send(message);
             System.out.println("Mail successfully sent");
         } catch (MessagingException mex) {
-            mex.printStackTrace();
+            System.out.println(mex);
         }
     }
 }
